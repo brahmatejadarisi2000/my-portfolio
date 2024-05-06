@@ -1,0 +1,24 @@
+.span {
+  border-right: 0.05em solid;
+  animation: blinkingCursor 1s step-end infinite;
+}
+
+.span1 {
+  border-right: 0.05em solid;
+}
+
+@keyframes blinkingCursor {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.highlight {
+  color: blue;
+}

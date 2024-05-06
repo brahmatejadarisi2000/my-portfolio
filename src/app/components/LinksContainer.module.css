@@ -1,0 +1,27 @@
+/* LinksContainer.module.css */
+
+.container {
+  position: fixed;
+  right: 20px;
+  z-index: 1;
+  top: 40%;
+  height: max-content;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s;
+}
+
+.link:hover {
+  transform: scale(1.05);
+}

@@ -1,95 +1,149 @@
-import Image from "next/image";
+// AboutMePage.js
+import React from "react";
+import { portfolioData } from "./data/portfolioData";
 import styles from "./page.module.css";
 
-export default function Home() {
+const AboutMePage = () => {
+  const {
+    personalInfo,
+    workExperience,
+    education,
+    skills,
+    certifications,
+    personalProjects,
+  } = portfolioData;
+
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
+    <div className={styles.aboutMeContainer}>
+      <div className={styles.personalInfo}>
+        <h1>About Me</h1>
         <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
+          <strong>Name:</strong> {personalInfo.name}
         </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
+        <p>
+          <strong>Email:</strong>{" "}
+          <a href={`mailto:${personalInfo.email}`} className={styles.emailLink}>
+            {personalInfo.email}
           </a>
-        </div>
+        </p>
+        <p>
+          <strong>Phone:</strong> {personalInfo.phone}
+        </p>
+        <p>
+          <strong>Location:</strong> {personalInfo?.location}
+        </p>
+        <p>
+          <strong>LinkedIn:</strong>{" "}
+          <a
+            href={"https://" + personalInfo.linkedin}
+            className={styles.externalLink}
+          >
+            {personalInfo.linkedin}
+          </a>
+        </p>
+        <p>
+          <strong>GitHub:</strong>{" "}
+          <a
+            href={"https://" + personalInfo.github}
+            className={styles.externalLink}
+          >
+            {personalInfo.github}
+          </a>
+        </p>
       </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className={styles.section}>
+        <h2>Introduction</h2>
+        <p>
+          Hi, I'm {personalInfo.name}, a passionate software engineer based in{" "}
+          {personalInfo.location}. With a strong background in web development
+          and a keen interest in solving complex problems, I strive to deliver
+          high-quality solutions that make a difference.
+        </p>
       </div>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className={styles.section}>
+        <h2>Skills</h2>
+        <ul className={styles.skillsList}>
+          {skills.map((skill, index) => (
+            <li key={index}>{skill}</li>
+          ))}
+        </ul>
       </div>
-    </main>
+
+      <div className={styles.section}>
+        <h2>Work Experience</h2>
+        {workExperience.map((experience, index) => (
+          <div key={index} className={styles.experienceItem}>
+            <h3>{experience.title}</h3>
+            <p>
+              {experience.company} - {experience.location}
+            </p>
+            <p>{experience.dates}</p>
+            <ul>
+              {experience.description.map((point, idx) => (
+                <li key={idx}>{point}</li>
+              ))}
+            </ul>
+            <p>
+              <strong>Technology Stack:</strong>{" "}
+              {experience.technologyStack.join(", ")}
+            </p>
+          </div>
+        ))}
+      </div>
+
+      <div className={styles.section}>
+        <h2>Education</h2>
+        <p>
+          <strong>Degree:</strong> {education.degree}
+        </p>
+        <p>
+          <strong>University:</strong> {education.university}
+        </p>
+        <p>
+          <strong>Dates:</strong> {education.dates}
+        </p>
+        <p>
+          <strong>Location:</strong> {education.location}
+        </p>
+      </div>
+
+      <div className={styles.section}>
+        <h2>Personal Projects</h2>
+        {personalProjects.map((project, index) => (
+          <div key={index} className={styles.projectItem}>
+            <h3>{project.name}</h3>
+            <p>{project.description}</p>
+            <p>
+              <strong>Technology Stack:</strong>{" "}
+              {project.technologyStack.join(", ")}
+            </p>
+          </div>
+        ))}
+      </div>
+
+      <div className={styles.section}>
+        <h2>Certifications</h2>
+        {certifications.map((certification, index) => (
+          <div key={index} className={styles.certificationItem}>
+            <h3>{certification.name}</h3>
+            <p>
+              {certification.dates} - {certification.issuer}
+            </p>
+            <p>{certification.description}</p>
+          </div>
+        ))}
+      </div>
+
+      <footer className={styles.footer}>
+        <p>
+          © {new Date().getFullYear()} All rights reserved. Designed and
+          developed by {personalInfo.name}
+        </p>
+      </footer>
+    </div>
   );
-}
+};
+
+export default AboutMePage;
