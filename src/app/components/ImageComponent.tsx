@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-interface ImageComponent {
+interface ImageComponentProps {
   src: string;
   alt: string;
   width: number;
@@ -10,7 +10,7 @@ interface ImageComponent {
   style?: React.CSSProperties;
 }
 
-const ImageComponent: React.FC<ImageComponent> = React.memo(
+const ImageComponent: React.FC<ImageComponentProps> = React.memo(
   ({ src, alt, width, height, quality, style }) => (
     <Image
       src={src}
@@ -23,5 +23,7 @@ const ImageComponent: React.FC<ImageComponent> = React.memo(
     />
   )
 );
+
+ImageComponent.displayName = "ImageComponent";
 
 export default ImageComponent;
