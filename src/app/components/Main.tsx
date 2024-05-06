@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import styles from "./Main.module.css";
 import { url } from "inspector";
 import React from "react";
+import profilePic from "../../../Images/profilepic.jpeg";
 import ImageComponent from "./ImageComponent";
 
 const Main = () => {
@@ -42,7 +43,7 @@ const Main = () => {
     >
       <div style={{ padding: "20px", width: "55%" }}>
         <ImageComponent
-          src={"/static/profilepic.jpeg"}
+          src={profilePic}
           alt="Profile Image"
           width={500}
           height={900}
