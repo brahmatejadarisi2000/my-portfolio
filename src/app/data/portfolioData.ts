@@ -1,8 +1,8 @@
 import { PortfolioData } from "./portfolioData.interface";
 
-import bms1 from "../../../images/bms-3.png";
+import bms3 from "../../../images/bms-3.png";
 import bms2 from "../../../images/bms-2.png";
-import bms3 from "../../../images/bms-1.png";
+import bms1 from "../../../images/bms-1.png";
 
 import foodiesnest from "../../../images/FoodiesNest.png";
 import foodiesnest2 from "../../../images/FoodiesNest_2.png";
