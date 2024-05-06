@@ -37,7 +37,7 @@ const Main = () => {
       }}
     >
       <Image
-        src="/profilepic.jpeg"
+        src="public/profilepic.jpeg"
         alt="Example Image"
         width={550}
         height={670}
