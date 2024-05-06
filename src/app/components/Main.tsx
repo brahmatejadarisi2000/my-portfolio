@@ -4,29 +4,7 @@ import { useEffect, useState } from "react";
 import styles from "./Main.module.css";
 import { url } from "inspector";
 import React from "react";
-
-interface ImageComponent {
-  src: string;
-  alt: string;
-  width: number;
-  height: number;
-  quality: number;
-  style?: React.CSSProperties;
-}
-
-const ImageComponent: React.FC<ImageComponent> = React.memo(
-  ({ src, alt, width, height, quality, style }) => (
-    <Image
-      src={src}
-      alt={alt}
-      width={width}
-      height={height}
-      layout="responsive"
-      quality={quality}
-      style={style}
-    />
-  )
-);
+import ImageComponent from "./ImageComponent";
 
 const Main = () => {
   const text =
