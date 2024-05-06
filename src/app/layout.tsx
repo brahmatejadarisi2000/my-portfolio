@@ -11,7 +11,6 @@ import Contact from "./components/Contact";
 import Skills from "./components/Skills";
 
 import { portfolioData } from "./data/portfolioData";
-import { url } from "inspector";
 
 const inter = Inter({ subsets: ["latin"] });
 
