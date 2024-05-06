@@ -1,7 +1,7 @@
 import { PortfolioData } from "../data/portfolioData.interface.js";
 import Image from "next/image";
 import achievements from "../../../Images/achievements.png";
-import cert1 from "/../../../Images/cert1.jpg";
+import cert1 from "../../../Images/cert1.jpg";
 
 interface ExperienceProps {
   portfolioData: PortfolioData;
