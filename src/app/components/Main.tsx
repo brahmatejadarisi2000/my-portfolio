@@ -2,6 +2,31 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import styles from "./Main.module.css";
+import { url } from "inspector";
+import React from "react";
+
+interface ImageComponent {
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+  quality: number;
+  style?: React.CSSProperties;
+}
+
+const ImageComponent: React.FC<ImageComponent> = React.memo(
+  ({ src, alt, width, height, quality, style }) => (
+    <Image
+      src={src}
+      alt={alt}
+      width={width}
+      height={height}
+      layout="responsive"
+      quality={quality}
+      style={style}
+    />
+  )
+);
 
 const Main = () => {
   const text =
@@ -30,28 +55,37 @@ const Main = () => {
     <div
       style={{
         maxWidth: "80vw",
-        maxHeight: "100vh",
         padding: "20px",
         display: "flex",
         alignItems: "center",
+        marginBottom: "40px",
+        overflow: "hidden",
       }}
     >
-      <Image
-        src="/profilepic.JPEG"
-        alt="Example Image"
-        width={550}
-        height={670}
-        // layout={"responsive"}
-        quality={100}
-        style={{
-          objectFit: "cover",
-          borderRadius: "8px",
-          boxShadow: "0 0 8px 8px white inset",
-        }}
-      />
+      <div style={{ padding: "20px", width: "55%" }}>
+        <ImageComponent
+          src={"/static/profilepic.JPEG"}
+          alt="Profile Image"
+          width={500}
+          height={900}
+          quality={100}
+          style={{
+            objectFit: "cover",
+            borderRadius: "8px",
+            boxShadow: "0 0 8px 8px white inset",
+          }}
+        />
+      </div>
 
-      <div style={{ padding: "20px" }}>
-        <h2
+      <div
+        style={{
+          padding: "20px",
+          width: "45%",
+          height: "100%",
+          wordBreak: "break-word",
+        }}
+      >
+        <h3
           style={{
             fontFamily: "Montserrat, sans-serif",
             color: "#fff",
@@ -79,7 +113,7 @@ const Main = () => {
             aria-hidden="true"
             className={isWritingDone ? styles.span : styles.span1}
           ></span>
-        </h2>
+        </h3>
       </div>
     </div>
   );
