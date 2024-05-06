@@ -1,3 +1,4 @@
+import { url } from "inspector";
 import { PortfolioData } from "../data/portfolioData.interface.js";
 import Image from "next/image";
 import { GiAchievement } from "react-icons/gi";
@@ -66,7 +67,7 @@ const Certifications: React.FC<ExperienceProps> = ({ portfolioData }) => {
 
         <div style={{ display: "flex", justifyContent: "start", width: "50%" }}>
           <Image
-            src="/cert1.JPG"
+            src={"/cert1.JPG"}
             alt="Example Image"
             width={500}
             height={500}
