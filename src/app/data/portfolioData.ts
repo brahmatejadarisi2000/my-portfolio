@@ -1,5 +1,14 @@
 import { PortfolioData } from "./portfolioData.interface";
 
+import bms1 from "../../../images/bms-3.png";
+import bms2 from "../../../images/bms-2.png";
+import bms3 from "../../../images/bms-1.png";
+
+import foodiesnest from "../../../images/FoodiesNest.png";
+import foodiesnest2 from "../../../images/FoodiesNest_2.png";
+import foodiesnest3 from "../../../images/FoodiesNest_3.png";
+import foodiesnest4 from "../../../images/FoodiesNest_4.png";
+
 export const portfolioData: PortfolioData = {
   personalInfo: {
     name: "Guru Brahma Teja Darisi",
@@ -110,19 +119,10 @@ export const portfolioData: PortfolioData = {
         "AWS",
       ],
 
-      images: [
-        "../../../images/bms-3.png",
-        "../../../images/bms-2.png",
-        "../../../images/bms-1.png",
-      ],
+      images: [bms3, bms2, bms1],
     },
     {
-      images: [
-        "../../../images/FoodiesNest.png",
-        "../../../images/FoodiesNest2.png",
-        "../../../images/FoodiesNest3.png",
-        "../../../images/FoodiesNes4.png",
-      ],
+      images: [foodiesnest, foodiesnest2, foodiesnest3, foodiesnest4],
       name: "FoodiesNest (09/2023 - 12/2023)",
       description:
         "Swiggy-inspired app developed using React and Styled Components, combined with a visually appealing UI and efficient styling.",

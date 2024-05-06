@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image";
+
 interface PersonalInfo {
   name: string;
   email: string;
@@ -30,7 +32,7 @@ export interface PersonalProject {
   name: string;
   description: string;
   technologyStack: string[];
-  images: string[];
+  images: StaticImageData[];
 }
 
 interface Certification {
