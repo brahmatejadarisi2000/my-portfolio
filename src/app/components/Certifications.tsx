@@ -1,7 +1,7 @@
-import { url } from "inspector";
 import { PortfolioData } from "../data/portfolioData.interface.js";
 import Image from "next/image";
-import { GiAchievement } from "react-icons/gi";
+import achievements from "../../../Images/achievements.png";
+import cert1 from "/../../../Images/cert1.jpg";
 
 interface ExperienceProps {
   portfolioData: PortfolioData;
@@ -18,16 +18,6 @@ const Certifications: React.FC<ExperienceProps> = ({ portfolioData }) => {
       }}
       className="Certifications"
     >
-      {/* <h3
-        style={{
-          fontSize: "20px",
-          fontWeight: "bold",
-          marginBottom: "32px",
-        }}
-      >
-        Certifications
-      </h3> */}
-
       <div
         style={{
           display: "flex",
@@ -55,7 +45,7 @@ const Certifications: React.FC<ExperienceProps> = ({ portfolioData }) => {
         >
           <div style={{ height: "30%" }}>
             <Image
-              src="/achievements.png"
+              src={achievements}
               alt="Achievements Image"
               layout={"responsive"}
               width={100}
@@ -67,7 +57,7 @@ const Certifications: React.FC<ExperienceProps> = ({ portfolioData }) => {
 
         <div style={{ display: "flex", justifyContent: "start", width: "50%" }}>
           <Image
-            src={"/cert1.JPG"}
+            src={cert1}
             alt="Example Image"
             width={500}
             height={500}

@@ -110,10 +110,19 @@ export const portfolioData: PortfolioData = {
         "AWS",
       ],
 
-      images: ["/bms-1.png", "/FoodiesNest.png"],
+      images: [
+        "../../../images/bms-3.png",
+        "../../../images/bms-2.png",
+        "../../../images/bms-1.png",
+      ],
     },
     {
-      images: ["/FoodiesNest.png", "/bms-1.png"],
+      images: [
+        "../../../images/FoodiesNest.png",
+        "../../../images/FoodiesNest2.png",
+        "../../../images/FoodiesNest3.png",
+        "../../../images/FoodiesNes4.png",
+      ],
       name: "FoodiesNest (09/2023 - 12/2023)",
       description:
         "Swiggy-inspired app developed using React and Styled Components, combined with a visually appealing UI and efficient styling.",
