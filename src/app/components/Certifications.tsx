@@ -66,7 +66,7 @@ const Certifications: React.FC<ExperienceProps> = ({ portfolioData }) => {
 
         <div style={{ display: "flex", justifyContent: "start", width: "50%" }}>
           <Image
-            src="/certificate1.jpg"
+            src="/cert1.JPG"
             alt="Example Image"
             width={500}
             height={500}
