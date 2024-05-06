@@ -42,7 +42,7 @@ const Main = () => {
     >
       <div style={{ padding: "20px", width: "55%" }}>
         <ImageComponent
-          src={"/static/profilepic.JPEG"}
+          src={"/static/profilepic.jpeg"}
           alt="Profile Image"
           width={500}
           height={900}
