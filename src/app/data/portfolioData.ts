@@ -120,17 +120,17 @@ export const portfolioData: PortfolioData = {
       ],
 
       images: [
-        "https://drive.google.com/thumbnail?id=1B6fZX59-WBidJafn4O0tMPKhIvKdbPqN",
-        "https://drive.google.com/thumbnail?id=1ul7ZT_UGMKB6qQInXxvG-PNiT6Kwqud7",
-        "https://drive.google.com/thumbnail?id=1D-SisOmcOyee4I88vUpSr4UrWpzAZfh7",
+        "https://drive.google.com/thumbnail?id=1B6fZX59-WBidJafn4O0tMPKhIvKdbPqN&sz=s4000",
+        "https://drive.google.com/thumbnail?id=1ul7ZT_UGMKB6qQInXxvG-PNiT6Kwqud7&sz=s4000",
+        "https://drive.google.com/thumbnail?id=1D-SisOmcOyee4I88vUpSr4UrWpzAZfh7&sz=s4000",
       ],
     },
     {
-      images: [ 
-        "https://drive.google.com/thumbnail?id=1GUOlZKyv-VblnFKpk-NQRV5cvRZ0tT29",
-        "https://drive.google.com/thumbnail?id=1A0qECKKFccuZ87wa4KgywUTJwa8qReWu",
-        "https://drive.google.com/thumbnail?id=1nOmotrWpXs1UljD5XMGxUmghQPIGVPgn",
-        "https://drive.google.com/thumbnail?id=1nOmotrWpXs1UljD5XMGxUmghQPIGVPgn",
+      images: [
+        "https://drive.google.com/thumbnail?id=1GUOlZKyv-VblnFKpk-NQRV5cvRZ0tT29&sz=s4000",
+        "https://drive.google.com/thumbnail?id=1A0qECKKFccuZ87wa4KgywUTJwa8qReWu&sz=s4000",
+        "https://drive.google.com/thumbnail?id=1nOmotrWpXs1UljD5XMGxUmghQPIGVPgn&sz=s4000",
+        "https://drive.google.com/thumbnail?id=1nOmotrWpXs1UljD5XMGxUmghQPIGVPgn&sz=s4000",
       ],
       name: "FoodiesNest (09/2023 - 12/2023)",
       description:
