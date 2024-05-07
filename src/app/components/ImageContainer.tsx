@@ -7,7 +7,7 @@ const ImageContainer = ({ project }: { project: PersonalProject }) => {
   const [presentIndex, setIndex] = useState(0);
 
   const handleImageClick = (index: number) => setIndex(index);
-  const imageUrl = project.images[presentIndex];
+  const imageUrl = project.images && project.images[presentIndex];
 
   return (
     <div
@@ -15,11 +15,10 @@ const ImageContainer = ({ project }: { project: PersonalProject }) => {
         position: "relative",
         overflow: "hidden",
         borderRadius: "8px",
-        zIndex: "0",
       }}
     >
       <Image
-        src={imageUrl}
+        src={imageUrl ?? ""}
         alt={project.name}
         width={450}
         height={300}
@@ -36,10 +35,9 @@ const ImageContainer = ({ project }: { project: PersonalProject }) => {
           transform: "translateX(-50%)",
           display: "flex",
           gap: "8px",
-          zIndex: "0",
         }}
       >
-        {project.images.map((_, index) => (
+        {project.images?.map((_, index) => (
           <span
             key={index}
             style={{

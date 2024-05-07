@@ -1,13 +1,13 @@
 import { PortfolioData } from "./portfolioData.interface";
 
-import bms3 from "../../../images/bms-3.png";
-import bms2 from "../../../images/bms-2.png";
-import bms1 from "../../../images/bms-1.png";
+// import bms3 from "../../../images/bms-3.png";
+// import bms2 from "../../../images/bms-2.png";
+// import bms1 from "../../../images/bms-1.png";
 
-import foodiesnest from "../../../images/FoodiesNest.png";
-import foodiesnest2 from "../../../images/FoodiesNest_2.png";
-import foodiesnest3 from "../../../images/FoodiesNest_3.png";
-import foodiesnest4 from "../../../images/FoodiesNest_4.png";
+// import foodiesnest from "../../../images/FoodiesNest.png";
+// import foodiesnest2 from "../../../images/FoodiesNest_2.png";
+// import foodiesnest3 from "../../../images/FoodiesNest_3.png";
+// import foodiesnest4 from "../../../images/FoodiesNest_4.png";
 
 export const portfolioData: PortfolioData = {
   personalInfo: {
@@ -119,10 +119,16 @@ export const portfolioData: PortfolioData = {
         "AWS",
       ],
 
-      images: [bms3, bms2, bms1],
+      // images: [bms3, bms2, bms1],
+     
     },
     {
-      images: [foodiesnest, foodiesnest2, foodiesnest3, foodiesnest4],
+      // images: [
+      //   "../../../images/FoodiesNest.png",
+      //   "../../../images/FoodiesNest_2.png",
+      //   "../../../images/FoodiesNest_3.png",
+      //   "../../../images/FoodiesNest_4.png",
+      // ],
       name: "FoodiesNest (09/2023 - 12/2023)",
       description:
         "Swiggy-inspired app developed using React and Styled Components, combined with a visually appealing UI and efficient styling.",
