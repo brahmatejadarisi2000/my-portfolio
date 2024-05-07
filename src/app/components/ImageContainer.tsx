@@ -7,7 +7,7 @@ const ImageContainer = ({ project }: { project: PersonalProject }) => {
   const [presentIndex, setIndex] = useState(0);
 
   const handleImageClick = (index: number) => setIndex(index);
-  const imageUrl = project.images && project.images[presentIndex];
+  const imageUrl = project.images[presentIndex];
 
   return (
     <div
@@ -18,7 +18,7 @@ const ImageContainer = ({ project }: { project: PersonalProject }) => {
       }}
     >
       <Image
-        src={imageUrl ?? ""}
+        src={imageUrl}
         alt={project.name}
         width={450}
         height={300}

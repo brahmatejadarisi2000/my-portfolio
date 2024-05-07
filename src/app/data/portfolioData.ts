@@ -119,16 +119,19 @@ export const portfolioData: PortfolioData = {
         "AWS",
       ],
 
-      // images: [bms3, bms2, bms1],
-     
+      images: [
+        "https://drive.google.com/uc?export=view&id=1B6fZX59-WBidJafn4O0tMPKhIvKdbPqN",
+        "https://drive.google.com/uc?export=view&id=1ul7ZT_UGMKB6qQInXxvG-PNiT6Kwqud7",
+        "https://drive.google.com/uc?export=view&id=1D-SisOmcOyee4I88vUpSr4UrWpzAZfh7",
+      ],
     },
     {
-      // images: [
-      //   "../../../images/FoodiesNest.png",
-      //   "../../../images/FoodiesNest_2.png",
-      //   "../../../images/FoodiesNest_3.png",
-      //   "../../../images/FoodiesNest_4.png",
-      // ],
+      images: [
+        "https://drive.google.com/uc?export=view&id=1GUOlZKyv-VblnFKpk-NQRV5cvRZ0tT29",
+        "https://drive.google.com/uc?export=view&id=1A0qECKKFccuZ87wa4KgywUTJwa8qReWu",
+        "https://drive.google.com/uc?export=view&id=1nOmotrWpXs1UljD5XMGxUmghQPIGVPgn",
+        "https://drive.google.com/uc?export=view&id=1nOmotrWpXs1UljD5XMGxUmghQPIGVPgn",
+      ],
       name: "FoodiesNest (09/2023 - 12/2023)",
       description:
         "Swiggy-inspired app developed using React and Styled Components, combined with a visually appealing UI and efficient styling.",

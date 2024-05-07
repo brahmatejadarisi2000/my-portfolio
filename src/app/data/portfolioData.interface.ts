@@ -32,7 +32,7 @@ export interface PersonalProject {
   name: string;
   description: string;
   technologyStack: string[];
-  images?: StaticImageData[];
+  images: string[];
 }
 
 interface Certification {
