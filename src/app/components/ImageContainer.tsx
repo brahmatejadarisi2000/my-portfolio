@@ -25,6 +25,7 @@ const ImageContainer = ({ project }: { project: PersonalProject }) => {
         style={{ borderRadius: "20px" }}
         layout="responsive"
         objectFit="cover"
+        quality={100}
       />
 
       <div
